@@ -2,6 +2,9 @@ package contactBook;
 
 import contactBook.Contact;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class ContactBook {
     static final int DEFAULT_SIZE = 100;
 
@@ -94,6 +97,11 @@ public class ContactBook {
     }
 
     public boolean hasRepeatedPhoneNumbers() {
+        Set<Contact> contact_set = new HashSet<>();
+        for (int i=0; i<counter; i++) {
+            if (!contact_set.add(contacts[i]))
+                return true;
+        }
         return false;
     }
 
