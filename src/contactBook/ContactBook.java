@@ -97,9 +97,9 @@ public class ContactBook {
     }
 
     public boolean hasRepeatedPhoneNumbers() {
-        Set<Contact> contact_set = new HashSet<>();
+        Set<Integer> contact_set = new HashSet<>();
         for (int i=0; i<counter; i++) {
-            if (!contact_set.add(contacts[i]))
+            if (!contact_set.add(contacts[i].getPhone()))
                 return true;
         }
         return false;
