@@ -93,4 +93,8 @@ public class ContactBook {
         return contacts[currentContact++];
     }
 
+    public Contact searchByPhone(int phone){
+        return null;
+    }
+
 }
