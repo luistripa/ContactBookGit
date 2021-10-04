@@ -95,10 +95,8 @@ public class ContactBook {
 
     public Contact searchByPhone(int phone){
         Contact contact = null;
-        int index = -1;
         for(int i = 0; i < counter; i++){
             if(contacts[i].getPhone() == phone){
-                index = i;
                 contact = contacts[i];
             }
         }
