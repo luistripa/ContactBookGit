@@ -94,13 +94,12 @@ public class ContactBook {
     }
 
     public Contact searchByPhone(int phone){
-        Contact contact = null;
         for(int i = 0; i < counter; i++){
             if(contacts[i].getPhone() == phone){
-                contact = contacts[i];
+                return contacts[i];
             }
         }
-        return contact;
+        return null;
     }
 
 }
