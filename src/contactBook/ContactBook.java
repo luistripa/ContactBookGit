@@ -94,7 +94,15 @@ public class ContactBook {
     }
 
     public Contact searchByPhone(int phone){
-        return null;
+        Contact contact = null;
+        int index = -1;
+        for(int i = 0; i < counter; i++){
+            if(contacts[i].getPhone() == phone){
+                index = i;
+                contact = contacts[i];
+            }
+        }
+        return contact;
     }
 
 }
