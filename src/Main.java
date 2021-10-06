@@ -60,6 +60,7 @@ public class Main {
                     break;
                 case EQUAL_PHONE:
                     samePhoneNumbers(cBook);
+                    break;
                 case GET_NUMBER:
                     searchByPhone(in,cBook);
                     break;
